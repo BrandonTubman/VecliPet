@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VecliPet Navbar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="brand">
+        <img
+          src="https://t4.ftcdn.net/jpg/02/28/67/25/360_F_228672582_ouoYYZ4RyYJwdNe2wirBTsRXwSbFLODz.jpg"
+          class="logo"
+          alt="VecliPet Logo"
+        />
+        <span class="brand-name">VecliPet</span>
+      </a>
+      <div class="buttons">
+      </div>
+      <div class="menu" id="navbar-sticky">
+        <ul class="menu-list">
+          <li><a href="/" class="menu-link">Home</a></li>
+          <li><a href="#about" class="menu-link">About Us</a></li>
+          <li><a href="#services" class="menu-link">Services</a></li>
+          <li><a href="#contact" class="menu-link">Contact</a></li>
+        </ul>
+      </div>
+      <button class="cta-button">Get started</button>
+      <button class="menu-button" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="menu-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"
+          />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="contact-form-container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <span class="error-message" id="nameError"></span>
+      </div>
+  
+      <div class="form-group">
+        <label for="petName">Pet Name</label>
+        <input type="text" id="petName" name="petName" placeholder="Your Pet's Name" required>
+        <span class="error-message" id="petNameError"></span>
+      </div>
+  
+      <div class="form-group">
+        <label for="petType">Pet Type</label>
+        <select id="petType" name="petType" required>
+          <option value="" disabled selected>Select your pet type</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="bird">Bird</option>
+          <option value="reptile">Reptile</option>
+          <option value="smallAnimal">Small Animal</option>
+          <option value="other">Other</option>
+        </select>
+        <span class="error-message" id="petTypeError"></span>
+      </div>
+  
+      <div class="form-group">
+        <label for="serviceRequested">Service Requested</label>
+        <select id="serviceRequested" name="serviceRequested" required>
+          <option value="" disabled selected>Select the service</option>
+          <option value="checkup">General Check-Up</option>
+          <option value="vaccination">Vaccination</option>
+          <option value="surgery">Surgery</option>
+          <option value="dental">Dental Care</option>
+          <option value="emergency">Emergency Services</option>
+          <option value="other">Other</option>
+        </select>
+        <span class="error-message" id="serviceRequestedError"></span>
+      </div>
+  
+      <div class="form-group">
+        <label for="appointmentTime">Preferred Appointment Time</label>
+        <input type="datetime-local" id="appointmentTime" name="appointmentTime" required>
+        <span class="error-message" id="appointmentTimeError"></span>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <span class="error-message" id="emailError"></span>
+      </div>
+  
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+        <span class="error-message" id="phoneError"></span>
+      </div>
+  
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
+  
+  <script src="next.config.js"></script>
+</body>
+</html>
