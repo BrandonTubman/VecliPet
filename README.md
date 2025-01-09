@@ -1,0 +1,1 @@
+This is a website created for VecliPet. In its current state it contains a Landing Page which is meant to be a home page for the site detailing the different functions of VecliPet and it links over to the conversion page which is composed of vanilla HTML, CSS, and JavaScript. Its purpose is to serve as a forum for people to use when they are signing up for services with VecliPet.
