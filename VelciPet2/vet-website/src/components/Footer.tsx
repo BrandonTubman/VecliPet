@@ -2,7 +2,6 @@ export default function Footer() {
   return (
     <footer className="text-black py-8 px-4" style={{ backgroundColor: '#0cb0a0' }}>
       <div className="max-w-screen-xl mx-auto text-center">
-        {/* Contact Info Section */}
         <div className="mb-8">
           <div className="mt-4">
             <p className="text-lg">Email: contact@veclipet.com</p>
@@ -10,7 +9,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Social Media Links */}
         <div className="flex justify-center space-x-6 mb-8">
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
             Facebook
@@ -23,7 +21,6 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* Call to Action Button */}
         <div>
           <a
             href="/schedule.html"
@@ -45,7 +42,6 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* Footer Bottom */}
         <div className="mt-8 text-sm">
           <p>&copy; {new Date().getFullYear()} VecliPet. All Rights Reserved.</p>
         </div>
